@@ -30,6 +30,10 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private UserStatus status;
 	
+	public void setStatus(UserStatus status) {
+		this.status = status;
+	}
+	
 	public enum UserStatus{
 		PENDING,
 		APPROVED,

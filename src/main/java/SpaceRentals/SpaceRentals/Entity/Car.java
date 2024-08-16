@@ -33,6 +33,10 @@ public class Car {
 	@Enumerated(EnumType.STRING)
 	private CarStatus status;
 	
+	public void setStatus(CarStatus status) {
+		this.status = status;
+	}
+
 	public enum CarStatus{
 		PENDING,
 		APPROVED,
